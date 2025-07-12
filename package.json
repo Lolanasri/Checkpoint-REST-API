@@ -13,5 +13,17 @@
   },
   "engines": {
     "node": ">=16.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lolanasri/Checkpoint-REST-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lolanasri/Checkpoint-REST-API/issues"
+  },
+  "homepage": "https://github.com/Lolanasri/Checkpoint-REST-API#readme",
+  "devDependencies": {}
 }
