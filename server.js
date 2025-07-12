@@ -70,6 +70,18 @@ app.delete('/users/:id', async (req, res) => {
 app.get("/", (req, res) => {
   res.send("🚀 API is working!");
 });
+// GET: Retourner un utilisateur par ID
+app.get('/users/:id', async (req, res) => {
+  try {
+    const user = await User.findById(req.params.id);
+    if (!user) {
+      return res.status(404).json({ message: 'Utilisateur non trouvé' });
+    }
+    res.json(user);
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+});
 
 // Lancer le serveur
 const PORT = process.env.PORT || 8080;
