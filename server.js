@@ -67,6 +67,9 @@ app.delete('/users/:id', async (req, res) => {
     res.status(400).json({ error: err.message });
   }
 });
+app.get("/", (req, res) => {
+  res.send("🚀 API is working!");
+});
 
 // Lancer le serveur
 const PORT = process.env.PORT || 8080;
