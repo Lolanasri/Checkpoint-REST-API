@@ -1,21 +1,17 @@
 {
   "name": "checkpoint-rest-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "REST API with Express and Mongoose",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Lolanasri/Checkpoint-REST-API.git"
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.16.3",
+    "dotenv": "^17.2.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Lolanasri/Checkpoint-REST-API/issues"
-  },
-  "homepage": "https://github.com/Lolanasri/Checkpoint-REST-API#readme",
-  "description": ""
+  "engines": {
+    "node": ">=16.0.0"
+  }
 }
